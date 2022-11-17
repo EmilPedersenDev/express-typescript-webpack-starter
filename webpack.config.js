@@ -6,9 +6,11 @@ module.exports = {
   entry: './src/server.ts',
   mode: NODE_ENV,
   target: 'node',
+  devtool: 'cheap-source-map',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'server.js',
+    devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },
   watch: NODE_ENV === 'development',
   resolve: {
