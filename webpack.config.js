@@ -26,12 +26,9 @@ module.exports = {
   },
   externals: [nodeExternals()],
   plugins: [
-    // new WebpackShellPlugin({
-    //   onBuildEnd: ['yarn run:dev'],
-    // }),
     new WebpackShellPluginNext({
       onBuildEnd: {
-        scripts: ['yarn run:dev'],
+        scripts: ['npm run dev'],
         parallel: true,
       },
     }),

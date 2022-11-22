@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
-    "start:dev": "NODE_ENV=development webpack",
-    "run:dev": "NODE_ENV=development nodemon build/server.js",
-    "dev:debug": "concurrently \"npx tsc --watch\" \"nodemon -q build/server.js\"",
+    "start": "NODE_ENV=development webpack",
+    "dev": "NODE_ENV=development nodemon build/server.js",
     "test": "jest"
   },
   "keywords": [],
